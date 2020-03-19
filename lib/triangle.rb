@@ -8,8 +8,12 @@ class Triangle
     test = nil
     if @side1 == @side2 && @side1 == @side3 && @side2 == @side3
       test = :equilateral
-    else
-      test = "what"
+    elsif @side1 == @side2 && @side1 != @side3 && @side2 != @side3       
+      test = :isoceles
+    elsif @side1 == @side3 && @side1 != @side2 && @side3 != @side2       
+      test = :isoceles
+    elsif @side2 == @side3 && @side2 != @side1 && @side3 != @side1       
+      test = :isoceles
     end
     test
   end
