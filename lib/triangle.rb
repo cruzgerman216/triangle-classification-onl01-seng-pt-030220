@@ -10,11 +10,11 @@ class Triangle
     if @side1 == @side2 && @side1 == @side3 && @side2 == @side3
       test = :equilateral
     elsif @side1 == @side2 && @side1 != @side3 && @side2 != @side3
-      test = :isoceles
+      test = :isosceles
     elsif @side1 == @side3 && @side1 != @side2 && @side3 != @side2
-      test = :isoceles
+      test = :isosceles
     elsif @side2 == @side3 && @side2 != @side1 && @side3 != @side1
-      test = :isoceles
+      test = :isosceles
     else
       test = :scalene
     end
