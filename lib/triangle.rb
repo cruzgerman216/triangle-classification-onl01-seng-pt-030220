@@ -5,6 +5,7 @@ class Triangle
     @side1, @side2, @side3= s1,s2,s3
   end
   def kind
+    
     test = nil
     if @side1 == @side2 && @side1 == @side3 && @side2 == @side3
       test = :equilateral
@@ -14,6 +15,8 @@ class Triangle
       test = :isoceles
     elsif @side2 == @side3 && @side2 != @side1 && @side3 != @side1
       test = :isoceles
+    else
+      test = :scalene
     end
     test
   end
